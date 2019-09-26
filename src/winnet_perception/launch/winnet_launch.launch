@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="namespace" default="bebop2" />
+    <node name="winnet_perception" pkg="winnet_perception" type="winnet_node.py" output="screen">      
+        <remap from="cnn_predictions" to="/cnn_out/predictions"/>
+        
+
+        <remap from="camera" to="$(arg namespace)/camera_base/image_raw"/>
+
+        <param name="weights_path" value="$(find winnet_perception)/models/my_model_3c.h5"/>
+
+        <param name="onboard_images_folder" value="$(find winnet_perception)/onboard_images"/>
+        <param name="target_size" value="96, 96"/>
+
+  </node>
+
+</launch>
+
