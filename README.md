@@ -21,8 +21,9 @@ The packages used for simulations are shown in the following image.
 
 ---
 
-### The simulation reust can be view by clicking on the image below
-[![winnet](winnet.png)](https://youtu.be/66n90qPI2rs)
+### The simulation reust can be viewed by clicking on the GIF below.
+
+[![winnet](winnet.gif)](https://youtu.be/66n90qPI2rs)
 
 
 
